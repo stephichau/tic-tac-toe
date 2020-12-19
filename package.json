@@ -1,0 +1,6 @@
+{
+  "scripts": {
+    "install": "cd react-app && yarn",
+    "start": "cd react-app && yarn start"
+  }
+}
