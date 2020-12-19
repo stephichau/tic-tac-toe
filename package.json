@@ -1,6 +1,11 @@
 {
   "scripts": {
     "install": "cd react-app && yarn",
+    "heroku-prebuild": "cd react-app && yarn install && yarn build",
     "start": "cd react-app && yarn start"
+  },
+  "engines": {
+    "node": "12.6.0",
+    "yarn": "1.22.4"
   }
 }
