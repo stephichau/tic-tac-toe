@@ -1,21 +1,15 @@
-function App() {
+import React from 'react';
+import { withStyles } from '@material-ui/core/styles';
+import Board from './Board';
+import { styles } from './styles';
+
+const App = ({ classes }) => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className={classes.container}>
+      <p className={classes.title}>Tic-Tac-Toe</p>
+      <Board />
     </div>
   );
 }
 
-export default App;
+export default withStyles(styles)(App);
